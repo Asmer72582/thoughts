@@ -20,7 +20,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <style>
   body {
-        background: url("img/bgg.jpg");
+        /*background: url("img/bgg.jpg");*/
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
