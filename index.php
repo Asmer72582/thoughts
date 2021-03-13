@@ -30,7 +30,7 @@
 <header>
 <nav class="navbar navbar-expand-sm bg-white navbar-dark fixed-top mb-5">
   <a class="navbar-brand text-warning" href="#">Thoughts</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <button class="navbar-toggler bg-warning" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
