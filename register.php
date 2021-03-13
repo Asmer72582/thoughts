@@ -20,7 +20,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <style>
   body {
-        /*background: url("img/bgg.jpg");*/
+        background: url("img/bgg.jpg");
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -80,25 +80,12 @@
       <div class="form-group">
     
 
-      <?php
-            $con = mysqli_connect('localhost', 'root', '');
-                    mysqli_select_db($con, 'thoughts');
-                    
-          $photo = "SELECT `id`, `fname`, `lname`, `email`, `uname`, `psw`, `foreginkey` FROM `poetscd` WHERE 1";
-                $query = mysqli_query($con, $photo);
-?>
- <?php
-
-                 while ( $result = mysqli_fetch_assoc($query)) {
-                    ?>
-                    <?php $id = $result['foreginkey']; ?>
-
-        <?php } ?>
+    
 
 
       <input type="password" minlength="8" name="psw" class="form-control w-sm-50" placeholder="Password " required="all required">
       </div>
-      <input type="hidden" name="uid" value="<?php echo $id; ?>">
+      <input type="hidden" name="uid" value="0">
       <center>
         <input type="submit" name="submit" onclick="removeSpaces();" value="Login" class="btn btn-warning text-center " >
         <hr class="w-75 bg-dark">
